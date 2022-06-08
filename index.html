@@ -9,6 +9,41 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Sign-Up!</h1>
+    </header>
+    <main>
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. <br>Sign up <em>now</em> to get started!</p>
+            <p></p>
+        </div>
+        <form action="">
+            <fieldset>
+                <legend>Enter your details!</legend>
+                <label for="f-name">First Name</label>
+                <input type="text" id="-f-name" name="f-name" placeholder="e.g. John / Jane" required>
+
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" name="l-name" placeholder="e.g. Smith" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. name@website.com" required>
+
+                <label for="phone-num">Phone Number</label>
+                <input type="tel" id="phone-num" name="phone-num" pattern="0-9" placeholder="e.g. 07111111111" required>
+
+                <label for="pw">Password</label>
+                <input type="password" id="pw" name="pw" placeholder="e.g. Password1234" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+
+                <label for="confirm-pw">Confirm Password</label>
+                <input type="password" id="confirm-pw" name="confirm-pw" placeholder="e.g. Password1234" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            </fieldset>
+            <button type="submit">Create Account</button>
+            <P>Already have an account? <a href="#">Sign In</a></P>
+        </form>
+    </main>
+    <footer>
+        <p>Created by <a class="footer-link" href="https://github.com/ClaraSmyth">Clara</a> for <a class="footer-link" href="https://www.theodinproject.com">TheOdinProject</a></p>
+    </footer>
 </body>
 </html>
