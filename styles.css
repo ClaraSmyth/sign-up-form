@@ -14,27 +14,33 @@ header {
 
 .title {
     position: absolute;
-    top: 40%;
-    left: calc(25% - 100px);
+    top: 30%;
+    left: calc(25% - 90px);
     z-index: 1;
-    width: 200px;
+    width: 180px;
+    height: 180px;
     text-align: center;
-    background-color: white;
-    border: 1px solid pink;
-    border-radius: 20px;
+    background-color: #fddafd;
+    outline: 5px solid hsla(0, 0%, 100%, 1);
+    outline-offset: -2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px 10px hsla(0, 0%, 100%, 1);
+    text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
 }
 
 
 .bg-img {
     position: relative;
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
 }
 
 .img-credit {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: fixed;
+    bottom: 2px;
+    left: 2px;
     z-index: 1;
     text-align: center;
     font-size: 14px;
@@ -52,7 +58,7 @@ header {
 /* MAIN SECTION */
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -64,7 +70,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-left: 40px;
+    padding: 30px;
     font-size: 1.2rem;
 }
 
@@ -80,7 +86,7 @@ main {
     display: grid;
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    border: 0;
+    border: 0 solid #f09dcb;
     border-radius: 20px;
     max-width: 600px;
     gap: 1rem;
@@ -137,8 +143,8 @@ form input:invalid {
 form button {
     margin: 30px 20px 5px;
     padding: 10px 20px;
-    background-color: #aff1ec;
-    border: 0;
+    background-color: #47e2d5;
+    border: 3px solid #3ecec2;
     border-radius: 10px;
     font-weight: 700;
     font-size: 20px;
@@ -149,13 +155,17 @@ form button {
 }
 
 form button:hover {
-    transform: scale(1.05);
-    outline: 3px solid #f96cd6;
-    outline-offset: -2px;
+    /* transform: scale(1.05); */
+    border: 3px solid #f96cd6;
+    color: #f96cd6;
 }
 
 .button-p {
     margin-left: 25px;
+}
+
+.button-p a:hover {
+    color: #f96cd6;
 }
 
 /* FOOTER */
@@ -175,6 +185,13 @@ footer p {
 
 .footer-link {
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
+}
+
+.footer-link:hover {
+    color: #f96cd6;
 }
 
 
