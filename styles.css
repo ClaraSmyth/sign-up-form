@@ -29,6 +29,24 @@ header {
     object-fit: cover;
 }
 
+.img-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+.img-credit a {
+    text-decoration: underline;
+    color: white;
+}
+
+.img-credit a:hover {
+    color: #609ee0;
+}
+
 /* MAIN SECTION */
 
 main {
