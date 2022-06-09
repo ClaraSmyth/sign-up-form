@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
+    background-color: #fddafd;
 }
 
 header {
@@ -16,17 +17,87 @@ header {
     z-index: 1;
     width: 200px;
     text-align: center;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 20px;
 }
 
 
 .bg-img {
     position: relative;
-    top: 0;
     height: 100%;
     object-fit: cover;
 }
 
+/* MAIN SECTION */
+
 main {
-    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.info {
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+}
+
+.info p {
+    padding: 10px;
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 600px;
+    gap: 1rem;
+    padding: 25px;
+}
+
+legend {
+    margin-left: 15px;
+}
+
+form input {
+    width: 100%;
+}
+
+form button {
+    margin: 30px 0px 5px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.button-p {
+}
+
+/* FOOTER */
+
+footer {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer p {
+    padding: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
