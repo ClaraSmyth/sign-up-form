@@ -4,6 +4,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: #fddafd;
     color: #6452a2;
     font-family: 'Mitr', sans-serif;
@@ -14,12 +16,12 @@ header {
 }
 
 .title {
-    position: absolute;
+    position: relative;
     top: 30%;
-    left: calc(25% - 90px);
+    left: calc(-49% - 90px);
     z-index: 1;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    padding: 20px;
     text-align: center;
     background-color: #fddafd;
     outline: 5px solid hsla(0, 0%, 100%, 1);
@@ -33,9 +35,16 @@ header {
 
 @media screen and (max-width: 1200px) {
     .title {
-        position: absolute;
-        top: 50px;
-        left: 50px;
+        all:unset;
+        position: relative;
+        font-size: 42px;
+        font-weight: 900;
+        margin: 20px 30px 0px 30px;
+        text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
+    }
+
+    .img-credit {
+        width: 180px;
     }
 }
 
@@ -63,23 +72,6 @@ header {
     color: #609ee0;
 }
 
-@media screen and (max-width: 900px) {
-    .title {
-        all:unset;
-        position: relative;
-        font-size: 42px;
-        font-weight: 900;
-        margin: 20px 30px 0px 30px;
-        text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
-    }
-
-    .img-credit {
-        width: 180px;
-    }
-}
-
-
-
 
 /* MAIN SECTION */
 
@@ -97,7 +89,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 30px;
+    padding: 0px 30px;
     font-size: 1.2rem;
 }
 
@@ -199,7 +191,7 @@ form button:hover {
     color: #f96cd6;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .info {
         padding: 10px 30px;
     }
