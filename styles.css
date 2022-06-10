@@ -6,7 +6,8 @@ body {
     width: 100vw;
     background-color: #fddafd;
     color: #6452a2;
-    font-family: 'Mitr', sans-serif;}
+    font-family: 'Mitr', sans-serif;
+}
 
 header {
     grid-row: span 2;
@@ -30,6 +31,13 @@ header {
     text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
 }
 
+@media screen and (max-width: 1200px) {
+    .title {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
 
 .bg-img {
     position: relative;
@@ -55,6 +63,23 @@ header {
     color: #609ee0;
 }
 
+@media screen and (max-width: 900px) {
+    .title {
+        all:unset;
+        position: relative;
+        font-size: 42px;
+        font-weight: 900;
+        margin: 20px 30px 0px 30px;
+    }
+
+    .img-credit {
+        width: 180px;
+    }
+}
+
+
+
+
 /* MAIN SECTION */
 
 main {
@@ -62,7 +87,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 99;
 }
+
+/* @media screen and (max-width: 900px) {
+    
+} */
 
 .info {
     max-width: 600px;
@@ -88,6 +118,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     border: 0 solid #f09dcb;
     border-radius: 20px;
+    min-width: 550px;
     max-width: 600px;
     gap: 1rem;
     padding: 20px;
@@ -164,9 +195,52 @@ form button:hover {
     margin-left: 25px;
 }
 
+.button-p a {
+    color: #f09dcb;
+}
+
 .button-p a:hover {
     color: #f96cd6;
 }
+
+@media screen and (max-width: 900px) {
+    .info {
+        padding: 10px 30px;
+    }
+
+    .form-body {
+        padding: 10px 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    main {
+        width: 100vw;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-fieldset {
+        grid-template-columns: 1fr;
+        min-width: auto;
+    }
+    
+    .flower-container {
+        display: none;
+    }
+}
+
+
 
 /* FOOTER */
 
@@ -195,12 +269,3 @@ footer p {
 }
 
 
-/* Colours from image
-#e87290 - Arch light pink
-#9b2f55 - Arch dark pink
-#7f5fa9 - Mountain purple 
-#fa92e9 - Bush light pink
-#f96cd6 - Bush dark pink
-#62a0e2 - Dress dark blue
-#b6c2ed - Dress light blue
-*/
