@@ -70,6 +70,7 @@ header {
         font-size: 42px;
         font-weight: 900;
         margin: 20px 30px 0px 30px;
+        text-shadow: 2px 2px hsla(0, 0%, 100%, 1);
     }
 
     .img-credit {
@@ -89,10 +90,6 @@ main {
     justify-content: space-around;
     z-index: 99;
 }
-
-/* @media screen and (max-width: 900px) {
-    
-} */
 
 .info {
     max-width: 600px;
@@ -186,7 +183,6 @@ form button {
 }
 
 form button:hover {
-    /* transform: scale(1.05); */
     border: 3px solid #f96cd6;
     color: #f96cd6;
 }
@@ -267,5 +263,3 @@ footer p {
 .footer-link:hover {
     color: #f96cd6;
 }
-
-
