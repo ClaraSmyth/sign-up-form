@@ -1,6 +1,6 @@
 # Sign-Up Form
 
-Live Version - [Click here!]()
+Live Version - [Click here!](https://clarasmyth.github.io/sign-up-form/)
 
 ![Image of the webpage](./img/Firefox_Screenshot_2022-06-10T00-18-48.104Z.png)
 
